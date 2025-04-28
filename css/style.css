@@ -1,79 +1,96 @@
+/* 全体のフォント・背景設定 */
 body {
-    font-family: 'Zen Maru Gothic', 'Yu Gothic', sans-serif;
-    background: radial-gradient(circle at top left, #3a3a3a, #1a1a1a);
-    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
-    color: #fdfdfd;
+    font-family: 'Shippori Mincho B1', serif;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
 }
 
+/* ヘッダー */
 header {
     padding: 30px 10px;
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
 .events {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 30px 10px;
 }
 
+/* イベントカード */
 .event-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #76c7c0;
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid #444;
     border-radius: 20px;
     margin: 15px;
     padding: 25px;
     width: 300px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.9);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #e0e0e0;
+    backdrop-filter: blur(3px);
 }
 
 .event-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,1);
 }
 
+/* ボタン */
 .btn {
     display: inline-block;
     margin: 12px 0;
     padding: 12px 25px;
-    background: #76c7c0;
-    color: #000;
+    background: linear-gradient(145deg, #1e88e5, #1565c0);
+    color: #fff;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
-    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: background 0.3s, transform 0.2s;
 }
 
 .btn:hover {
-    background: #5aa7a1;
+    background: linear-gradient(145deg, #42a5f5, #1e88e5);
+    transform: scale(1.05);
 }
 
+/* LINEボタン */
 .line-btn {
-    margin-top: 8px;
+    margin-top: 10px;
     height: 42px;
 }
 
-/* スマホ対応 */
+/* 文章にも影を入れてミステリアスに */
+.event-card h2,
+.event-card p {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* モバイル対応 */
 @media (max-width: 600px) {
     .event-card {
         width: 90%;
     }
 
     h1 {
-        font-size: 1.7em;
+        font-size: 1.8em;
     }
 }
+
 
 
     h1 {
