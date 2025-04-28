@@ -1,7 +1,8 @@
 body {
-    font-family: 'Yu Gothic', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
-    color: #f4f4f4;
+    font-family: 'Zen Maru Gothic', 'Yu Gothic', sans-serif;
+    background: radial-gradient(circle at top left, #3a3a3a, #1a1a1a);
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    color: #fdfdfd;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -9,13 +10,14 @@ body {
 
 header {
     padding: 30px 10px;
-    background-color: #00000080;
+    background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .events {
@@ -26,39 +28,40 @@ h1 {
 }
 
 .event-card {
-    background-color: #252525;
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #76c7c0;
+    border-radius: 20px;
     margin: 15px;
     padding: 25px;
     width: 300px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7);
 }
 
 .btn {
     display: inline-block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: #76c7c0;
+    margin: 12px 0;
+    padding: 12px 25px;
+    background: #76c7c0;
     color: #000;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 30px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background 0.3s;
 }
 
 .btn:hover {
-    background-color: #5aa7a1;
+    background: #5aa7a1;
 }
 
 .line-btn {
-    margin-top: 5px;
-    height: 40px;
+    margin-top: 8px;
+    height: 42px;
 }
 
 /* スマホ対応 */
@@ -66,6 +69,12 @@ h1 {
     .event-card {
         width: 90%;
     }
+
+    h1 {
+        font-size: 1.7em;
+    }
+}
+
 
     h1 {
         font-size: 1.5em;
