@@ -1,0 +1,43 @@
+body {
+    font-family: 'Yu Gothic', sans-serif;
+    background-color: #121212;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #181818;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.event-card {
+    background-color: #222;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card a {
+    color: #76c7c0;
+    text-decoration: none;
+}
+
+.event-card a:hover {
+    text-decoration: underline;
+}
