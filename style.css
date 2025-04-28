@@ -1,6 +1,6 @@
 body {
     font-family: 'Yu Gothic', sans-serif;
-    background-color: #121212;
+    background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
     color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -8,8 +8,14 @@ body {
 }
 
 header {
-    padding: 20px;
-    background-color: #181818;
+    padding: 30px 10px;
+    background-color: #00000080;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .events {
@@ -20,24 +26,48 @@ header {
 }
 
 .event-card {
-    background-color: #222;
-    border-radius: 10px;
+    background-color: #252525;
+    border-radius: 15px;
     margin: 15px;
-    padding: 20px;
+    padding: 25px;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
 }
 
-.event-card a {
-    color: #76c7c0;
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #76c7c0;
+    color: #000;
     text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.event-card a:hover {
-    text-decoration: underline;
+.btn:hover {
+    background-color: #5aa7a1;
+}
+
+.line-btn {
+    margin-top: 5px;
+    height: 40px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .event-card {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
 }
